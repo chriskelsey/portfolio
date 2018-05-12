@@ -1,0 +1,57 @@
+body {
+	font: 1em/1.25em Helvetica, Arial, sans-serif;
+	background-color: #d2d7dd;
+}
+
+header {
+  
+	border-bottom: 1px solid #9a9a9a;
+	position:fixed;
+	top:0;
+	background: #fff;
+	width:  100%;
+	-webkit-box-shadow: 0 3px 5px #babfc6;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  	-moz-box-shadow:    0 3px 5px #babfc6;  /* Firefox 3.5 - 3.6 */
+  	box-shadow:         0 3px 5px #babfc6;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}
+nav {
+	float:right;
+}
+
+nav ul {
+	display: inline-block;
+}
+
+nav ul li {
+	display: inline-block;
+}
+
+main {
+	margin-top: 5em;
+}
+
+p {
+	margin-bottom: 1em;
+}
+
+h1, h2 {
+	font: 150%/200% 'Tinos', serif;
+	margin: 1em 0;
+}
+
+p.title {
+	font: 150%/200% 'Tinos', serif;
+	display: block;
+	float:left;
+	background-color: #42d8dd;
+	padding:0.5em 2em;
+	margin-bottom:0;
+	color:#fff;
+
+}
+
+.wrapper {
+	width: 100%;
+	max-width: 768px;
+	margin:0 auto;
+}
