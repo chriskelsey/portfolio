@@ -1,4 +1,4 @@
-html, body {
+html {
 	height:100%;
 }
 
@@ -6,8 +6,9 @@ body {
 	font: 1em/1.25em 'Arial', 'Helvetica Neue', Helvetica, sans-serif;;
 	background: url('images/crisp_paper_ruffles.png') repeat #d2d7dd;
 	color: #777;
+	min-height: calc(100% - 18.5em);
+	padding-bottom: 10em;
 	position: relative;
-	padding-bottom: 5.25em;
 }
 
 p {
@@ -36,7 +37,6 @@ p.title {
 }
 
 header {
-  
 	border-bottom: 1px solid #ccc;
 	position:fixed;
 	top:0;
@@ -80,18 +80,21 @@ nav ul li  a:hover {
 
 main {
 	margin-top: 8.5em;
+	min-height: 100%;
+
 }
 
 footer {
-	padding-top: 1.25em;
+	/*margin-top: 7em;*/
 	border-top: 5px solid #4aaaa5;
 	background-color: #666;
 	width:100%;
-	position: absolute;
-	bottom:0;
 	height:4em;
 	color: #999;
 	text-align: center;
+	padding-top: 1.25em;
+	position: absolute;
+	bottom:0;
 }
 
 section {
@@ -130,9 +133,46 @@ main section {
 	text-decoration: none;
 }
 
-label, textarea, input {
+textarea, input {
+	display:block;
+	width:98%;
+	padding: .5em 1%;
+	font-size: .825em;
+	border:1px solid #ddd;
+	margin-bottom: 1.5em;
+}
+
+label {
+	font-size: 110%;
+	margin-bottom: 0.5em;
 	display:block;
 	width:100%;
+}
+
+button {
+	font-size: 1.25em;
+	color:#fff;
+	background-color: #4aaaa5;
+	padding:0.5em 2em;
+	border:none;
+	cursor: pointer;
+}
+
+input::placeholder {
+	color: #999;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #999;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #999;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #999;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #999;
 }
 
 .clearfix::after {
@@ -140,3 +180,5 @@ label, textarea, input {
     display:block;
     clear:both;
 }
+
+.push {height:5.25em;}
