@@ -1,7 +1,38 @@
+html, body {
+	height:100%;
+}
+
 body {
 	font: 1em/1.25em 'Arial', 'Helvetica Neue', Helvetica, sans-serif;;
 	background: url('images/crisp_paper_ruffles.png') repeat #d2d7dd;
 	color: #777;
+	position: relative;
+	padding-bottom: 5.25em;
+}
+
+p {
+	margin-bottom: 1em;
+	line-height: 2em;
+}
+
+h1, h2 {
+	font: bold 175%/225% 'Georgia', Times, Times New Roman, serif;
+	margin: 0.75em 0 1em 0;
+	border-bottom: 2px solid #ccc;
+	color: #4aaaa5;
+	padding-bottom: 0.4em
+}
+
+p.title {
+	font: bold 175%/225% 'Georgia', Times, Times New Roman, serif;
+	display: block;
+	float:left;
+	background-color: #4aaaa5;
+	padding:0.5em 1.25em;
+	margin-bottom:0;
+	margin-left:-1.25em;
+	color:#fff;
+
 }
 
 header {
@@ -11,6 +42,7 @@ header {
 	top:0;
 	background: #fff;
 	width:  100%;
+	z-index:10;
 	-webkit-box-shadow: 0 3px 5px #babfc6;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
   	-moz-box-shadow:    0 3px 5px #babfc6;  /* Firefox 3.5 - 3.6 */
   	box-shadow:         0 3px 5px #babfc6;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
@@ -41,13 +73,9 @@ nav ul li a {
 	font-size: 110%;
 }
 
-
-/* Change color on hover */
 nav ul li  a:hover {
-background-color: #ddd;
-color: black;
-border-bottom-style: solid;
-border-color: #cccccc;
+	background-color: #ddd;
+	color: #000;
 }
 
 main {
@@ -55,35 +83,15 @@ main {
 }
 
 footer {
-	margin-top: 7em;
+	padding-top: 1.25em;
 	border-top: 5px solid #4aaaa5;
 	background-color: #666;
-	height:100%;
-}
-
-p {
-	margin-bottom: 1em;
-	line-height: 2em;
-}
-
-h1, h2 {
-	font: bold 175%/225% 'Georgia', Times, Times New Roman, serif;
-	margin: 0.75em 0 1em 0;
-	border-bottom: 2px solid #ccc;
-	color: #4aaaa5;
-	padding-bottom: 0.4em
-}
-
-p.title {
-	font: bold 175%/225% 'Georgia', Times, Times New Roman, serif;
-	display: block;
-	float:left;
-	background-color: #4aaaa5;
-	padding:0.5em 1.25em;
-	margin-bottom:0;
-	margin-left:-1.25em;
-	color:#fff;
-
+	width:100%;
+	position: absolute;
+	bottom:0;
+	height:4em;
+	color: #999;
+	text-align: center;
 }
 
 section {
@@ -107,7 +115,7 @@ main section {
 .img-link {
 	float:left;
 	position: relative;
-	margin-right: 2.5em;
+	margin: 1.6em 2.5em 1.6em 0;
 }
 
 .img-link a {
@@ -115,8 +123,11 @@ main section {
     text-align: center;
     width: 100%;
     left: 0;
-    bottom: 10px;
-}
+    bottom: 1.25em;
+    font: 125%/200% 'Georgia', Times, Times New Roman, serif;
+	background-color: #4aaaa5;
+	color: #fff;
+	text-decoration: none;
 }
 
 label, textarea, input {
