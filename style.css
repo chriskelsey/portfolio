@@ -41,6 +41,15 @@ nav ul li a {
 	font-size: 110%;
 }
 
+
+/* Change color on hover */
+nav ul li  a:hover {
+background-color: #ddd;
+color: black;
+border-bottom-style: solid;
+border-color: #cccccc;
+}
+
 main {
 	margin-top: 8.5em;
 }
@@ -59,9 +68,10 @@ p {
 
 h1, h2 {
 	font: bold 175%/225% 'Georgia', Times, Times New Roman, serif;
-	margin: 1em 0;
-	border-bottom: 1px solid #ccc;
+	margin: 0.75em 0 1em 0;
+	border-bottom: 2px solid #ccc;
 	color: #4aaaa5;
+	padding-bottom: 0.4em
 }
 
 p.title {
@@ -85,12 +95,37 @@ section {
 
 main section {
 	background-color: #fff;
-	padding-top: 1em;
 	padding-bottom: 2em;
 	border:1px solid #ddd;
 }
 
 .profile-photo {
 	float:left;
-	margin-right: 1em;
+	margin: 0.5em 1em 0 0;
+}
+
+.img-link {
+	float:left;
+	position: relative;
+	margin-right: 2.5em;
+}
+
+.img-link a {
+	position: absolute;
+    text-align: center;
+    width: 100%;
+    left: 0;
+    bottom: 10px;
+}
+}
+
+label, textarea, input {
+	display:block;
+	width:100%;
+}
+
+.clearfix::after {
+    content: "";
+    display:block;
+    clear:both;
 }
